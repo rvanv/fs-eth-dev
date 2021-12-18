@@ -22,8 +22,10 @@ module.exports = {
     artifacts: './src/artifacts',
   },
   networks: {
-    hardhat: {
-      chainId: 1337
+    hardhat: {},
+    kovan: {
+      url: `infura url${infura_url}`,
+      accounts: `private key ${priv_key}`,
     }
   }
 };
